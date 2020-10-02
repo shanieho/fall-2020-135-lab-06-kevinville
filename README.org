@@ -1,12 +1,12 @@
 * Fall 2020 - Lab 06
 
-* Last name:
+* Last name: Hardyal
 
-* First name:
+* First name: Kevin
 
-* GitHub username:
+* GitHub username: kevinville
 
-* Notes:
+* Notes: hello
 
 
   
