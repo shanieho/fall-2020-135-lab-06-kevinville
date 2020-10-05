@@ -1,5 +1,5 @@
-main: main.o funcs.o caesar.o viginere.o decrypt.o
-	g++ -o main main.o funcs.o caesar.o viginere.o decrypt.o
+main: main.o funcs.o caesar.o decrypt.o
+	g++ -o main main.o funcs.o caesar.o decrypt.o
 
 tests: tests.o funcs.o caesar.o viginere.o decrypt.o
 	g++ -o tests tests.o funcs.o caesar.o viginere.o decrypt.o
