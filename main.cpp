@@ -8,11 +8,9 @@ int main()
   std::string input;  // we need a string to take the persons input, then a character in the program to convert it to ascii.
 
   // Testing Lab 6A
-  input = "Good Boy!";
-  std::cout <<"Runs Lab6A with words Good Boy.\n";
-  test_ascii(input);
-  std::cout << "\nRuns with word doggo!\n";
-  input = "doggo";
+  std::cout << "Please enter a string to be tested.\n";
+  std::cin >> input;
+  std::cout <<"Runs Lab6A with Your Input\n";
   test_ascii(input);
   std::cout << "-----------------------\n";
 
@@ -29,6 +27,6 @@ int main()
   std::cout << "Original: " << input << "\n";
   std::string viginereencrypt = encryptVigenere(input, "yes");
   std::cout << "Viginere Encrypted: " << viginereencrypt;
-  std::cout << "\n Viginere Decrypted: " << decryptVigenere(viginereencrypt, "yes");
+  std::cout << "\nViginere Decrypted: " << decryptVigenere(viginereencrypt, "yes");
   return 0;
 }
