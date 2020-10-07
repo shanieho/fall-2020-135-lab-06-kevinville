@@ -1,8 +1,8 @@
-main: main.o funcs.o caesar.o decrypt.o
-	g++ -o main main.o funcs.o caesar.o decrypt.o
+main: main.o funcs.o caesar.o decrypt.o viginere.o
+	g++ -o main main.o funcs.o caesar.o decrypt.o viginere.o
 
 tests: tests.o funcs.o caesar.o viginere.o decrypt.o
-	g++ -o tests tests.o funcs.o caesar.o viginere.o decrypt.o
+	g++ -o tests tests.o funcs.o caesar.o viginere.o decrypt.o -std=c++14
 
 funcs.o: funcs.cpp funcs.h
 
@@ -22,4 +22,3 @@ clean:
 help:
 	@echo  make main : make executable named main
 	@echo make tests : make test suite named tests
-
