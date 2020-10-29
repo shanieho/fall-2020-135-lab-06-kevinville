@@ -1,10 +1,12 @@
-main: main.o funcs.o caesar.o decrypt.o viginere.o
-	g++ -o main main.o funcs.o caesar.o decrypt.o viginere.o
+main: main.o funcs.o caesar.o decrypt.o viginere.o decode.o
+	g++ -o main main.o funcs.o caesar.o decrypt.o viginere.o decode.o
 
-tests: tests.o funcs.o caesar.o viginere.o decrypt.o
-	g++ -o tests tests.o funcs.o caesar.o viginere.o decrypt.o -std=c++14
+tests: tests.o funcs.o caesar.o viginere.o decrypt.o decode.o
+	g++ -o tests tests.o funcs.o caesar.o viginere.o decrypt.o decode.o
 
 funcs.o: funcs.cpp funcs.h
+
+decode.o: decode.cpp decode.h
 
 main.o: main.cpp funcs.h caesar.h viginere.h decrypt.h
 

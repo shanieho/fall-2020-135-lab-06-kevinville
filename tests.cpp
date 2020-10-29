@@ -4,6 +4,7 @@
 #include "caesar.h"
 #include "viginere.h"
 #include "decrypt.h"
+#include "decode.h"
 
 TEST_CASE("Testing Lab6 Task B")
 {
@@ -37,4 +38,14 @@ CHECK(decryptCaesar("hppeczf", 1) == "goodbye");
 CHECK(decryptCaesar("obualy", 7) == "hunter");
 CHECK(decryptCaesar("cuxjyavutcuxjy", 6) == "wordsuponwords");
 CHECK(decryptCaesar("Qhmaxlxacrbxwn", 9) == "Hydrocortisone");
+}
+
+TEST_CASE("Testing Lab6 Decode Caesar")
+{
+CHECK(decode("Wruqdgr")== "Tornado");
+CHECK(decode("DzzIlvksdvwh")== "AwwFishpaste");
+CHECK(decode("fsyninxjxyfgqnxmrjsyfwnfsnxr") == "antidisestablishmentarianism"); //one of the longest english words fun fact
+CHECK(decode("NoChange") == "NoChange");
+CHECK(decode("Fewiqirx") == "Basement");
+
 }

@@ -3,6 +3,7 @@
 #include "caesar.h"
 #include "viginere.h"
 #include "decrypt.h"
+#include "decode.h"
 int main()
 {
   std::string input;  // we need a string to take the persons input, then a character in the program to convert it to ascii.
@@ -28,5 +29,7 @@ int main()
   std::string viginereencrypt = encryptVigenere(input, "yes");
   std::cout << "Viginere Encrypted: " << viginereencrypt;
   std::cout << "\nViginere Decrypted: " << decryptVigenere(viginereencrypt, "yes");
+
+  std::cout << "\n" << decode("Fewiqirx");
   return 0;
 }
