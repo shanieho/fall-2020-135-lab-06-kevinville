@@ -30,6 +30,7 @@ int main()
   std::cout << "Viginere Encrypted: " << viginereencrypt;
   std::cout << "\nViginere Decrypted: " << decryptVigenere(viginereencrypt, "yes");
 
-  std::cout << "\n" << decode("Fewiqirx");
+  // Testing decode
+  std::cout << "\nLab 6 Decode\n" << decode("Wruqdgr");
   return 0;
 }
